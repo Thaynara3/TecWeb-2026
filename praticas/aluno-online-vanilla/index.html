@@ -3,45 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    <link rel="stylesheet" href="/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aluno Online</title>
   </head>
+
   <body>
-    <!--MENU LATERAL-->
-<nav>
-  <header>
-  <h1>Aluno Online</h1>
-  <ul>
-    <li><a href="#">Dashboard</a></li>
-    <li><a href="#">Notas</a></li>
-    <li><a href="#">Faltas</a></li>
-    <li><a href="#">Boletos</a></li>
-    <li><a href="#">Requerimentos</a></li>
-    <li><a href="#">Sair</a></li>
-  </ul>
-</header>
-</nav>
-    <!--Conteúdo Principal-->
+    <!-- SIDEBAR -->
+    <aside>
+      <h1>Aluno Online</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Notas</a></li>
+          <li><a href="#">Faltas</a></li>
+          <li><a href="#">Boletos</a></li>
+          <li><a href="#">Requerimentos</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- CONTEÚDO -->
     <main>
-      <!--Topo -->
-      <header>
+      <!-- TOPO -->
+      <header class="topbar">
         <h2>Olá, Aluno!</h2>
       </header>
-      <section>
-        <h3>Mural de Avisos</h3>
-        <ul>
+
+      <p class="subtitle">Bem-vindo ao portal do aluno</p>
+
+      <!-- MURAL -->
+      <section class="card">
+        <h3 class="card-header">Mural de Avisos</h3>
+        <ul class="card-content">
           <li>Inscrição para o projeto de extensão</li>
-          <li>Eleição para represennntante de turma</li>
+          <li>Eleição para representante de turma</li>
         </ul>
-        <ul>
-          <h3>Calendário Acadêmico</h3>
+      </section>
+
+      <!-- CALENDÁRIO -->
+      <section class="card">
+        <h3 class="card-header">Calendário Acadêmico</h3>
+        <ul class="card-content">
           <li>23/02 - Início do período letivo 2026 - 1</li>
           <li>25/04 - Prazo final para aplicação da P1</li>
           <li>23/06 - Prazo final para aplicação da P2</li>
           <li>04/07 - Fim do período letivo 2026 - 1</li>
         </ul>
-        <ul>
-          <h3>Minhas Disciplinas</h3>
+      </section>
+
+      <!-- DISCIPLINAS -->
+      <section class="card">
+        <h3 class="card-header">Minhas Disciplinas</h3>
+        <ul class="card-content">
           <li>Bancos de Dados I (HMDC253)</li>
           <li>Estrutura de Dados (MDC127)</li>
           <li>Tecnologias Web (HMDC251)</li>
@@ -49,6 +64,6 @@
       </section>
     </main>
 
-   <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
